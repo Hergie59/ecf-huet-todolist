@@ -1,18 +1,30 @@
-import React from "react";
+// import React, { useState } from "react";
 import { FaPlusSquare } from 'react-icons/fa';
 
-class AddTask extends React.Component{
-    render(){
-        return(
-            <>
-            <h3>Nouvelle tâche</h3>
-            <div>
-                <input type="text" placeholder="Add newTask"/>
-                <button><FaPlusSquare /></button>
-            </div>
-            </>
-        )
-    }
+
+function AddTask() {
+    // const [tasks, setTask ] = useState([]);
+    // const [valeurText, setValeurText] = useState("");
+    // const task = { id: Math.floor(Math.random() * 1000), name: valeurText };
+
+    // function handleChange(e){
+    //     setValeurText(e.target.value);
+    //     setValeurText((prevState) => [...prevState, task]);    
+    // }
+
+    // function handleClick(){
+    //     setTask((prevState) => [...prevState, task]);
+    // }
+
+    return(
+        <>
+        <h3>Nouvelle tâche</h3>
+        <div>
+            <input type="text" placeholder="Add newTask" /*value={valeurText} onChange={handleChange}*//>
+            <button /*onClick={handleClick}*/><FaPlusSquare /></button>
+        </div>
+        </>
+    );  
 }
 
 export default AddTask;
